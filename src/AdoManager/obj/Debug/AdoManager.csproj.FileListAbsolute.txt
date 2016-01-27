@@ -1,0 +1,4 @@
+D:\AdoManager\AdoManager\bin\Debug\AdoManager.dll
+D:\AdoManager\AdoManager\bin\Debug\AdoManager.pdb
+D:\AdoManager\AdoManager\obj\Debug\AdoManager.dll
+D:\AdoManager\AdoManager\obj\Debug\AdoManager.pdb
