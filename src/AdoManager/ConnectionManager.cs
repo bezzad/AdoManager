@@ -646,14 +646,17 @@ namespace AdoManager
         /// Load an xml document with ConnectionManager configuration information.
         /// </summary>
         /// <param name="xmlText">The XML text.</param>
-        /// <returns></returns>
         public static void LoadFromXml(string xmlText)
         {
-            var xmlConnectionStrings = XElement.Parse(xmlText, LoadOptions.None);
+            if (string.IsNullOrEmpty(xmlText)) return;
 
-            foreach (XElement xmlConn in xmlConnectionStrings.Elements("add"))
+            var xmlConn = XElement.Parse(xmlText, LoadOptions.None);
+
+            var connStrXml = xmlConn.Element("connectionStrings") ?? xmlConn;
+
+            foreach (XElement add in connStrXml.Elements("add"))
             {
-                Connection.Items.Add(Connection.Parse(xmlConn));
+                Connection.Items.Add(Connection.ParseXElemntAdd(add));
             }
         }
 

@@ -325,7 +325,7 @@ namespace AdoManager
 
         protected static int GetUniqueId()
         {
-            return DateTime.Now.GetHashCode();
+            return Math.Abs(DateTime.Now.GetHashCode());
         }
 
         public static Connection ParseConnectionString(string connectionString)
@@ -358,9 +358,13 @@ namespace AdoManager
 
         public static Connection Parse(XElement xmlConnection)
         {
-            var add = xmlConnection.Element("add");
+            if (xmlConnection == null) return null;
 
-            return add == null ? ParseXElemntAdd(xmlConnection) : ParseXElemntAdd(add);
+            var connStrXml = xmlConnection.Element("connectionStrings") ?? xmlConnection;
+
+            connStrXml = connStrXml.Element("add") ?? connStrXml;
+
+            return ParseXElemntAdd(connStrXml);
         }
 
         public static Connection Parse(string connection)
@@ -369,17 +373,17 @@ namespace AdoManager
             return Parse(xml);
         }
 
-        private static Connection ParseXElemntAdd(XElement add)
+        internal static Connection ParseXElemntAdd(XElement add)
         {
-            var name = add.Attribute("name").Value;
+            var name = add.Attribute("name")?.Value;
 
-            var publicKeyToken = add.Attribute("publicKeyToken").Value;
+            var publicKeyToken = add.Attribute("publicKeyToken")?.Value;
 
-            var description = add.Attribute("description").Value;
+            var description = add.Attribute("description")?.Value;
 
             var connectionString = add.Attribute("connectionString").Value;
 
-            var providerName = add.Attribute("providerName").Value;
+            var providerName = add.Attribute("providerName")?.Value;
 
             var encrypted = connectionString.StartsWith("#");
 
@@ -387,7 +391,7 @@ namespace AdoManager
 
             conn.Name = encrypted ? name.Decrypt() : name;
 
-            conn.ProviderName = encrypted ? providerName.Decrypt() : providerName;
+            conn.ProviderName = encrypted ? providerName?.Decrypt() : providerName;
 
             conn.Id = Int32.Parse(
                 String.IsNullOrEmpty(publicKeyToken)
@@ -409,7 +413,7 @@ namespace AdoManager
             return Parse(xmlConnection);
         }
 
-        public static explicit operator string(Connection conn)
+        public static explicit operator string (Connection conn)
         {
             return conn.ConnectionString;
         }
