@@ -256,7 +256,7 @@ namespace AdoManager
             return SqlConn.CreateCommand();
         }
 
-        public DataTable ExecuteDataSet(string commandText, CommandType commandType = CommandType.StoredProcedure, params SqlParameter[] Params)
+        public DataTable ExecuteDataSet(string commandText, CommandType commandType = CommandType.Text, params SqlParameter[] Params)
         {
             try
             {
@@ -295,7 +295,12 @@ namespace AdoManager
             }
         }
 
-        public T ExecuteScalar<T>(string commandText, CommandType commandType = CommandType.StoredProcedure, params SqlParameter[] Params)
+        public DataTable ExecuteDataSetProc(string commandText, params SqlParameter[] Params)
+        {
+            return ExecuteDataSet(commandText, CommandType.StoredProcedure, Params);
+        }
+
+        public T ExecuteScalar<T>(string commandText, CommandType commandType = CommandType.Text, params SqlParameter[] Params)
         {
             try
             {
@@ -332,6 +337,11 @@ namespace AdoManager
                 Close();
             }
 
+        }
+    
+        public T ExecuteScalarProc<T>(string commandText, params SqlParameter[] Params)
+        {
+            return ExecuteScalar<T>(commandText, CommandType.StoredProcedure, Params);
         }
 
         public T ExecuteScalar<T>(SqlCommand cmd, params SqlParameter[] Params)
@@ -401,7 +411,7 @@ namespace AdoManager
             }
         }
 
-        public async Task<T> ExecuteScalarAsync<T>(string commandText, CommandType commandType = CommandType.StoredProcedure, params SqlParameter[] Params)
+        public async Task<T> ExecuteScalarAsync<T>(string commandText, CommandType commandType = CommandType.Text, params SqlParameter[] Params)
         {
             try
             {
@@ -438,7 +448,11 @@ namespace AdoManager
             }
         }
 
-        public int ExecuteNonQuery(string commandText, CommandType commandType = CommandType.StoredProcedure, params SqlParameter[] Params)
+        public async Task<T> ExecuteScalarProcAsync<T>(string commandText, params SqlParameter[] Params)
+        {
+            return await ExecuteScalarAsync<T>(commandText, CommandType.StoredProcedure, Params);
+        }
+        public int ExecuteNonQuery(string commandText, CommandType commandType = CommandType.Text, params SqlParameter[] Params)
         {
             try
             {
@@ -518,7 +532,7 @@ namespace AdoManager
             }
         }
 
-        public SqlDataReader ExecuteReader(string commandText, CommandType commandType = CommandType.StoredProcedure, params SqlParameter[] Params)
+        public SqlDataReader ExecuteReader(string commandText, CommandType commandType = CommandType.Text, params SqlParameter[] Params)
         {
             try
             {
@@ -549,7 +563,12 @@ namespace AdoManager
             }
         }
 
-        public SqlDataReader ExecuteReader(string commandText, Dictionary<string, object> Params)
+        public SqlDataReader ExecuteReaderProc(string commandText, params SqlParameter[] Params)
+        {
+            return ExecuteReader(commandText, CommandType.StoredProcedure, Params);
+        }
+
+        public SqlDataReader ExecuteReaderProc(string commandText, Dictionary<string, object> Params)
         {
             var cmd = CreateCommand();
 
@@ -564,7 +583,7 @@ namespace AdoManager
             if (Params != null && Params.Count > 0)
             {
                 foreach (var param in Params)
-                    cmd.Parameters.Add(param.Key, param.Value);
+                    cmd.Parameters.AddWithValue(param.Key, param.Value);
             }
 
             Open();
@@ -612,6 +631,8 @@ namespace AdoManager
             }
             return false;
         }
+
+
 
         #endregion
 
