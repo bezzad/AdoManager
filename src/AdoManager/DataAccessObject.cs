@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,20 @@ namespace AdoManager
         public static async Task<IEnumerable<dynamic>> GetFromQueryAsync(string query)
         {
             var result = await Conn.SqlConn.QueryAsync<dynamic>(query);
+
+            return result;
+        }
+
+        public static async Task<IEnumerable<dynamic>> GetFromQueryAsync(string query, ExpandoObject param)
+        {
+            var result = await Conn.SqlConn.QueryAsync<dynamic>(query, param);
+
+            return result;
+        }
+
+        public static IEnumerable<dynamic> GetFromQuery(string query, ExpandoObject param)
+        {
+            var result = Conn.SqlConn.Query<dynamic>(query, param);
 
             return result;
         }
