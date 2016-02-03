@@ -1,17 +1,27 @@
 ﻿namespace AdoManager
 {
+    /// <summary>
+    /// specifies the comparison operation to perform.
+    /// </summary>
     public enum Operators
     {
-        IN,
-        AND,
-        OR,
-        LIKE,
-        BETWEEN,
         Equal,
         NotEqual,
         GreaterThan,
         LessThan,
-        GreaterThanOrEqual,
-        LessThanOrEqual
+        GreaterThanOrEqualTo,
+        LessThanOrEqualTo,
+        Between,
+        NotBetween,
+        Contains,
+        NotContains,
+        BeginsWith,
+        EndsWith,
+        IsNull,
+        NotIsNull,
+        IsEmpty,
+        NotIsEmpty,
+        In,
+        NotIn
     }
 }
