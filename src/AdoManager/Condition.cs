@@ -6,7 +6,7 @@ namespace AdoManager
     {
         
 
-        public Operators OperateByBeforeConditions { get; set; } = Operators.AND;
+        public Operators OperateByBeforeConditions { get; set; } = Operators.And;
         public string Key { get; set; }
         public Operators Operate { get; set; }
         public object[] Values { get; set; }
@@ -33,20 +33,18 @@ namespace AdoManager
 
         public override string ToString()
         {
-            var hasQuotation = (Values[0] is string);
-
             string result = Not ? "NOT " : "";
 
             switch (Operate)
             {
-                case Operators.BETWEEN:
+                case Operators.Between:
                     result += $@"{Key} {Operate} {Values[0]} AND {Values[1]}";
                     break;
-                case Operators.IN:
+                case Operators.In:
                     var strValues = Values.Select(x => $"{x.ToSqlString()}");
                     result += $@"{Key} {Operate} ({string.Join(",", strValues)})";
                     break;
-                case Operators.LIKE:
+                case Operators.Like:
                     result += $@"{Key} {Operate} '%{Values[0]}%'";
                     break;
                 case Operators.Equal:
@@ -61,10 +59,10 @@ namespace AdoManager
                 case Operators.LessThan:
                     result += $@"{Key} < {Values[0].ToSqlString()}";
                     break;
-                case Operators.GreaterThanOrEqual:
+                case Operators.GreaterThanOrEqualTo:
                     result += $@"{Key} >= {Values[0].ToSqlString()}";
                     break;
-                case Operators.LessThanOrEqual:
+                case Operators.LessThanOrEqualTo:
                     result += $@"{Key} <= {Values[0].ToSqlString()}";
                     break;
                 default:
