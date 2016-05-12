@@ -19,11 +19,13 @@
     <authors>Behzad Khosravifar</authors>
     <owners>Behzad Khosravifar</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
-    <projectUrl>http://xomorod.com/</projectUrl>
+    <projectUrl>http://xomorod.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
+      
       * Some Bug fixes
       * First initialize in Nuget package from github
+      
     </releaseNotes>
     <copyright>Copyright (C) 2015-2016 Behzad Khosravifar</copyright>
     <tags>
@@ -47,10 +49,10 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\out\AdoManager.dll" target="lib\net45" />
-    <file src="..\..\out\AdoManager.pdb" target="lib\net45" />
+    <file src="..\..\Out\AdoManager.dll" target="lib\net45" />
+    <file src="..\..\Out\AdoManager.pdb" target="lib\net45" />
 
-    <file src="..\..\LICENSE" target="" />
+    <file src="..\..\LICENSE.md" target="" />
     <file src="..\..\Readme.md" target="" />
   </files>
 </package>

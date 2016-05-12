@@ -7,7 +7,6 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("AdoManager")]
 [assembly: AssemblyDescription("This is a C#.Net project's for manage database connection strings of your .Net applications.")]
-[assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Xomorod")]
 [assembly: AssemblyProduct("AdoManager")]
 [assembly: AssemblyCopyright("Copyright © 2015-2016")]
@@ -33,4 +32,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.2.*")]
-[assembly: AssemblyFileVersion("1.0.2.0")]
+[assembly: AssemblyFileVersion("1.0.2")]

@@ -8,10 +8,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9BC500C4-5B8D-4DAA-9C10-7C0595BA7062}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\AdoManager.nuspec = .nuget\AdoManager.nuspec
+		.nuget\CreateNugetPackAfterCompile.bat = .nuget\CreateNugetPackAfterCompile.bat
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 		.nuget\nupack.bat = .nuget\nupack.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68CCDE60-252A-439A-B8DF-79FE0C66C3AF}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE.md = ..\LICENSE.md
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Global
