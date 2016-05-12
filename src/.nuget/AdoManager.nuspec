@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AdoManager</id>
+    <title>Ado.NET Manager</title>
+    <iconUrl>
+      https://raw.githubusercontent.com/Behzadkhosravifar/AdoManager/master/src/AdoManager/favicon.png
+    </iconUrl>
+    <version>1.0.2</version>
+    <description>
+      AdoManager is a .NET project for managing Sql Connection Strings and Ado.NET executions. 
+      Read connection strings from setting file as normal or encrypted mode. 
+      Share connections in environs of all projects as static.
+      You can use Dapper ORM in DataAccessObject.
+    </description>
+    <summary>
+      This is a C#.Net project's for manage database connection strings of your .Net applications.
+    </summary>
+    <authors>Behzad Khosravifar</authors>
+    <owners>Behzad Khosravifar</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
+    <projectUrl>http://xomorod.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+      * Some Bug fixes
+      * First initialize in Nuget package from github
+    </releaseNotes>
+    <copyright>Copyright (C) 2015-2016 Behzad Khosravifar</copyright>
+    <tags>
+      Ado Manager Connetion String Shared SqlConnection Dapper-ORM 
+    </tags>
+    <developmentDependency>true</developmentDependency>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" />
+      <frameworkAssembly assemblyName="System" />
+      <frameworkAssembly assemblyName="System.Core" />
+      <frameworkAssembly assemblyName="System.Data" />
+      <frameworkAssembly assemblyName="System.Data.DataSetExtensions" />
+      <frameworkAssembly assemblyName="System.Net.Http" />
+      <frameworkAssembly assemblyName="System.Xml" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" />
+    </frameworkAssemblies>
+    <dependencies>
+      <group targetFramework="net45">
+        <dependency id="Dapper" version="1.42.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\out\AdoManager.dll" target="lib\net45" />
+    <file src="..\..\out\AdoManager.pdb" target="lib\net45" />
+
+    <file src="..\..\LICENSE" target="" />
+    <file src="..\..\Readme.md" target="" />
+  </files>
+</package>

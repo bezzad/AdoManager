@@ -5,6 +5,15 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoManager", "AdoManager\AdoManager.csproj", "{C6A52698-9C02-49F4-B848-CDFFC6562215}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9BC500C4-5B8D-4DAA-9C10-7C0595BA7062}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\AdoManager.nuspec = .nuget\AdoManager.nuspec
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\nupack.bat = .nuget\nupack.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
