@@ -59,7 +59,6 @@
     <file src="..\..\Out\AdoManager.dll" target="lib\net45" />
     <file src="..\..\Out\AdoManager.pdb" target="lib\net45" />
 
-    <file src="..\..\LICENSE.md" target="License.txt" />
-    <file src="..\..\Readme.md" target="Readme.txt" />
+    <file src="readme.txt" target="" />
   </files>
 </package>

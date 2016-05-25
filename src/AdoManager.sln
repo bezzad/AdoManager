@@ -13,12 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9BC500
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 		.nuget\nupack.bat = .nuget\nupack.bat
+		.nuget\readme.txt = .nuget\readme.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68CCDE60-252A-439A-B8DF-79FE0C66C3AF}"
 	ProjectSection(SolutionItems) = preProject
 		..\LICENSE.md = ..\LICENSE.md
-		..\README.md = ..\README.md
+		..\README.txt = ..\README.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoManager.TransformOnBuild.MSBuild.Task", "AdoManager.TransformOnBuild.MSBuild.Task\AdoManager.TransformOnBuild.MSBuild.Task.csproj", "{57370C61-3FEF-45EE-A7EF-E0B3F946DD3D}"
