@@ -8,7 +8,7 @@
     </iconUrl>
     <version>1.1.4</version>
     <description>
-      AdoManager is a .NET project for managing Sql Connection Strings and Ado.NET executions.
+      AdoManager is a .NET project for managing Sql Connection Strings and Ado.NET executions just in C# projects.
       Read connection strings from setting file as normal or encrypted mode.
       Share connections in environs of all projects as static.
       You can use Dapper ORM in DataAccessObject.
@@ -24,10 +24,12 @@
     <projectUrl>http://xomorod.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
-      
-        * Some Bug fixes
-      * First initialize in Nuget package from github
-      
+
+      * Some Bug fixes.
+      * A Connection.cs class added to automatically to your project.
+      * Create your connections property and adding automatically by T4.
+      * Auto built-in for T4 Text Templete project added.
+
     </releaseNotes>
     <copyright>Copyright (C) 2015-2016 Behzad Khosravifar</copyright>
     <tags>
