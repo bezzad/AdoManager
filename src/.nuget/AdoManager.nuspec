@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package >
-  <metadata>
+  <metadata minClientVersion="2.8">
     <id>AdoManager</id>
     <title>Ado.NET Manager</title>
     <iconUrl>
