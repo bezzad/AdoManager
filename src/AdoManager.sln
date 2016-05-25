@@ -22,11 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.txt = ..\README.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoManager.TransformOnBuild.MSBuild.Task", "AdoManager.TransformOnBuild.MSBuild.Task\AdoManager.TransformOnBuild.MSBuild.Task.csproj", "{57370C61-3FEF-45EE-A7EF-E0B3F946DD3D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{A8AD4A62-5314-49BC-A393-C052BC1047B9}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\build\AdoManager.TransformOnBuild.targets = .nuget\build\AdoManager.TransformOnBuild.targets
 		.nuget\build\Connections.tt = .nuget\build\Connections.tt
 	EndProjectSection
 EndProject
@@ -40,10 +37,6 @@ Global
 		{C6A52698-9C02-49F4-B848-CDFFC6562215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6A52698-9C02-49F4-B848-CDFFC6562215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6A52698-9C02-49F4-B848-CDFFC6562215}.Release|Any CPU.Build.0 = Release|Any CPU
-		{57370C61-3FEF-45EE-A7EF-E0B3F946DD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57370C61-3FEF-45EE-A7EF-E0B3F946DD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57370C61-3FEF-45EE-A7EF-E0B3F946DD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57370C61-3FEF-45EE-A7EF-E0B3F946DD3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
