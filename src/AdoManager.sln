@@ -1,13 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoManager", "AdoManager\AdoManager.csproj", "{C6A52698-9C02-49F4-B848-CDFFC6562215}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9BC500C4-5B8D-4DAA-9C10-7C0595BA7062}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\AdoManager.nuspec = .nuget\AdoManager.nuspec
+		.nuget\Connections.tt = .nuget\Connections.tt
 		.nuget\CreateNugetPackAfterCompile.bat = .nuget\CreateNugetPackAfterCompile.bat
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
@@ -20,11 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		..\LICENSE.md = ..\LICENSE.md
 		..\README.txt = ..\README.txt
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{A8AD4A62-5314-49BC-A393-C052BC1047B9}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\build\Connections.tt = .nuget\build\Connections.tt
 	EndProjectSection
 EndProject
 Global
@@ -40,8 +36,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A8AD4A62-5314-49BC-A393-C052BC1047B9} = {9BC500C4-5B8D-4DAA-9C10-7C0595BA7062}
 	EndGlobalSection
 EndGlobal
