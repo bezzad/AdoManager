@@ -1,5 +1,5 @@
 ﻿<#@ template language="C#" hostspecific="true" #>
-<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.8\lib\net45\AdoManager.dll" #>
+<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.9\lib\net45\AdoManager.dll" #>
 <#//@ assembly name="EnvDTE" #>
 <#//@ import namespace="EnvDTE" #>
 <#@ import namespace="AdoManager" #>

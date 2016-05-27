@@ -1,5 +1,5 @@
 # AdoManager
-!(Ado.net manager)[https://raw.githubusercontent.com/Behzadkhosravifar/AdoManager/master/src/AdoManager/favicon.png]
+![Ado.net manager][https://raw.githubusercontent.com/Behzadkhosravifar/AdoManager/master/src/AdoManager/favicon.png
 
 ADO.NET connection manager to store OOP connection string and execute a query easily. <br/>
 AdoManager is a .NET project for managing Sql Connection Strings and Ado.NET executions. 
