@@ -1,5 +1,5 @@
 <#@ template language="C#" hostspecific="true" #>
-<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.23\lib\net45\AdoManager.dll" #>
+<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.24\lib\net45\AdoManager.dll" #>
 <#@ import namespace="AdoManager" #>
 <#@ import namespace="System.IO" #>
 <#@ output extension=".cs" #>
@@ -24,7 +24,7 @@ using AdoManager;
 internal static partial class Connections
 {
 	<#
-    string path =  Host.ResolvePath(".."); // Path.GetDirectoryName(dte.Solution.FullName) +
+    string path =  Host.ResolvePath("..");
 		
     string configPath = File.Exists(Path.Combine(path, "Web.Config"))
 		? Path.Combine(path, "Web.Config")
