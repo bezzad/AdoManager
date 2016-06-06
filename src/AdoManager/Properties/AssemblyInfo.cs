@@ -11,7 +11,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("AdoManager")]
 [assembly: AssemblyCopyright("Copyright © 2015-2016")]
 [assembly: AssemblyTrademark("Xomorod")]
-[assembly: AssemblyKeyFile("AppKeys.snk")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.40")]
-[assembly: AssemblyFileVersion("1.1.40")]
+[assembly: AssemblyVersion("1.1.47")]
+[assembly: AssemblyFileVersion("1.1.47")]
