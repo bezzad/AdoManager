@@ -76,7 +76,7 @@
 		var asmVerPattern = @"AdoManager.\d+\.\d+\.\d+";
         // 
         // Set new version in target files
-        ConnectionTempleteData = Regex.Replace(ConnectionTempleteData, asmVerPattern, $"AdoManager.{newVersion}");
+        ConnectionTempleteData = Regex.Replace(ConnectionTempleteData, asmVerPattern, "AdoManager." + newVersion);
         File.WriteAllText(ConnectionTempletePath, ConnectionTempleteData);
 	}
 	//========================================== Connection Templete ============================================
@@ -96,7 +96,7 @@
 		var asmVerPattern = @"<version>\d+\.\d+\.\d+<\/version>";
         // 
         // Set new version in target files
-        AdoManagerNuspecData = Regex.Replace(AdoManagerNuspecData, asmVerPattern, $"<version>{newVersion}</version>");
+        AdoManagerNuspecData = Regex.Replace(AdoManagerNuspecData, asmVerPattern, string.Format("<version>{0}</version>", newVersion));
         File.WriteAllText(AdoManagerNuspecPath, AdoManagerNuspecData);
 	}
 	//========================================== AdoManager Nuspec ==============================================

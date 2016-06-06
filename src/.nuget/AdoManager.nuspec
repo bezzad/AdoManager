@@ -6,10 +6,10 @@
     <iconUrl>
       https://raw.githubusercontent.com/Behzadkhosravifar/AdoManager/master/src/AdoManager/favicon.png
     </iconUrl>
-    <version>1.1.24</version>
+    <version>1.1.37</version>
     <description>
       AdoManager is a .NET project for managing Sql Connection Strings and Ado.NET executions.
-      Read connection strings from setting file as normal or encrypted mode.
+      Read connection strings from setting file as normal or encrypted mode, automatically.
       Share connections in environs of all projects as static.
       You can use Dapper ORM in DataAccessObject.
 
@@ -26,9 +26,6 @@
     <releaseNotes>
 
       * Some Bug fixes.
-      * A Connection.cs class added to automatically to your project.
-      * Create your connections property and adding automatically by T4.
-      * Auto built-in for T4 Text Templete project added.
 
     </releaseNotes>
     <copyright>Copyright (C) 2015-2016 Behzad Khosravifar</copyright>
@@ -47,7 +44,7 @@
     </frameworkAssemblies>
     <dependencies>
       <group targetFramework="net45">
-        <dependency id="Dapper" version="1.42.0" />
+        <dependency id="Dapper" version="1.42" />
         <dependency id="Clarius.TransformOnBuild-unofficial" version="1.20" />
       </group>
     </dependencies>
