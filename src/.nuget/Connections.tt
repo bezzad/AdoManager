@@ -1,5 +1,5 @@
 <#@ template language="C#" hostspecific="true" #>
-<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.47\lib\net45\AdoManager.dll" #>
+<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.48\lib\net45\AdoManager.dll" #>
 <#@ import namespace="AdoManager" #>
 <#@ import namespace="System.IO" #>
 <#@ output extension=".cs" #>
