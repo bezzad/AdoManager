@@ -18,8 +18,8 @@
     <summary>
       This is a C#.Net project's for manage database connection strings of your .Net applications.
     </summary>
-    <authors>Behzad Khosravifar, Ahmad Aghazadeh</authors>
-    <owners>Behzad Khosravifar, AhmadAghazadeh</owners>
+    <authors>Behzad Khosravifar</authors>
+    <owners>Behzad Khosravifar</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
     <projectUrl>http://xomorod.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
