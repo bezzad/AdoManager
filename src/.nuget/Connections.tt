@@ -1,6 +1,6 @@
 <#@ template language="C#"  hostspecific="true" debug="false" #>
 <#@ output extension=".cs" #>
-<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.52\lib\net45\AdoManager.dll" #>
+<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.53\lib\net45\AdoManager.dll" #>
 <#@ import namespace="System" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="AdoManager" #>
@@ -31,7 +31,7 @@ internal static partial class Connections
 		: "App.config";
 			
 	string designTimePath = Path.Combine(path, configPath);
-	configPath = (configPath == "App.config") ? "appName + \".exe.config\"" : "\"WebConfig\"";
+	configPath = (configPath == "App.config") ? "appName + \".exe.config\"" : "\"Web.Config\"";
 
 	if(File.Exists(designTimePath)) 
 	{
