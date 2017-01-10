@@ -1,7 +1,6 @@
 <#@ template language="C#"  hostspecific="true" debug="false" #>
 <#@ output extension=".cs" #>
-<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.77\lib\net45\AdoManager.dll" #>
-<#@ import namespace="System" #>
+<#@ assembly name="$(SolutionDir)\packages\AdoManager.1.1.82\lib\net45\AdoManager.dll" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="AdoManager" #>
 //------------------------------------------------------------------------------

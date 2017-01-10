@@ -6,7 +6,7 @@
     <iconUrl>
       https://raw.githubusercontent.com/Behzadkhosravifar/AdoManager/master/src/AdoManager/favicon.png
     </iconUrl>
-    <version>1.1.77</version>
+    <version>1.1.82</version>
     <description>
       AdoManager is a .NET project for managing SQL Connection Strings and Ado.NET executions.
       Read connection strings from setting file as normal or encrypted mode, automatically.
@@ -20,14 +20,13 @@
     </summary>
     <authors>Behzad Khosravifar</authors>
     <owners>Behzad Khosravifar</owners>
-    <language>en-US</language>
     <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
     <projectUrl>http://xomorod.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 
       * Some Bug fixes.
-      * Fix winForms App.config load problem at runtime.
+   * Fix winForms App.config load problem at runtime.
 
     </releaseNotes>
     <copyright>Copyright (C) 2015-2017 Behzad Khosravifar</copyright>
@@ -46,7 +45,7 @@
     </frameworkAssemblies>
     <dependencies>
       <group targetFramework="net45">
-        <dependency id="Dapper" version="1.50.2" />
+        <dependency id="Dapper" version="1.50" />
         <dependency id="Clarius.TransformOnBuild-unofficial" version="1.20" />
       </group>
     </dependencies>
