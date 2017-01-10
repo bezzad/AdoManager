@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("This is a C#.Net project's for manage database connection strings of your .Net applications.")]
 [assembly: AssemblyCompany("Xomorod")]
 [assembly: AssemblyProduct("AdoManager")]
-[assembly: AssemblyCopyright("Copyright © 2015-2016")]
+[assembly: AssemblyCopyright("Copyright (C) 2015-2017 Behzad Khosravifar")]
 [assembly: AssemblyTrademark("Xomorod")]
 [assembly: AssemblyCulture("")]
 
@@ -31,5 +31,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.64")]
-[assembly: AssemblyFileVersion("1.1.64")]
+[assembly: AssemblyVersion("1.1.77")]
+[assembly: AssemblyFileVersion("1.1.77")]
+[assembly: AssemblyInformationalVersion("1.1.77")]

@@ -1,14 +1,14 @@
-<?xml version="1.0"?>
-<package >
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8">
     <id>AdoManager</id>
     <title>Ado.NET Manager</title>
     <iconUrl>
       https://raw.githubusercontent.com/Behzadkhosravifar/AdoManager/master/src/AdoManager/favicon.png
     </iconUrl>
-    <version>1.1.64</version>
+    <version>1.1.77</version>
     <description>
-      AdoManager is a .NET project for managing Sql Connection Strings and Ado.NET executions.
+      AdoManager is a .NET project for managing SQL Connection Strings and Ado.NET executions.
       Read connection strings from setting file as normal or encrypted mode, automatically.
       Share connections in environs of all projects as static.
       You can use Dapper ORM in DataAccessObject.
@@ -20,17 +20,19 @@
     </summary>
     <authors>Behzad Khosravifar</authors>
     <owners>Behzad Khosravifar</owners>
+    <language>en-US</language>
     <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
     <projectUrl>http://xomorod.com</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 
       * Some Bug fixes.
+      * Fix winForms App.config load problem at runtime.
 
     </releaseNotes>
-    <copyright>Copyright (C) 2015-2016 Behzad Khosravifar</copyright>
+    <copyright>Copyright (C) 2015-2017 Behzad Khosravifar</copyright>
     <tags>
-      Ado Manager Connetion String Shared SqlConnection Dapper-ORM
+      Ado Manager Connection String Shared SqlConnection Dapper-ORM
     </tags>
     <developmentDependency>true</developmentDependency>
     <frameworkAssemblies>
@@ -44,7 +46,7 @@
     </frameworkAssemblies>
     <dependencies>
       <group targetFramework="net45">
-        <dependency id="Dapper" version="1.42" />
+        <dependency id="Dapper" version="1.50.2" />
         <dependency id="Clarius.TransformOnBuild-unofficial" version="1.20" />
       </group>
     </dependencies>
